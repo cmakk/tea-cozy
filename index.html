@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Tea Cozy</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="main.js" defer></script>
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB-teas" type="text/x-handlebars-template">
+        {{#each teas}}
+          <article class="tea">
+            <img class="teaimage" src={{this.image}} alt={{this.name}} />
+            <h4 class="teaname">{{this.name}}</h4>
+          </article>
+        {{/each}}
+    </script>
+    <script id="templateHB-loc" type="text/x-handlebars-template">
+        {{#each locations}}
+          <article class="location">
+            <h3 class="locname">{{this.name}}</h3>
+            <p class="address">{{this.address}}</p>
+            <p class="address">{{this.address2}}</p>
+            <p class="address">{{this.city}}</p>
+          </article>
+        {{/each}}
+    </script>
+  </head>
+
+  <body>
+
+    <!----------------- Top Bar Content ----------------->
+    <div class="headerbar">
+      <header>
+        <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png?_gl=1*1haqz3k*_ga*MTI3NzcwMDAxNy4xNjc1Mjc3MTAz*_ga_3LRZM6TM9L*MTY3NTgwNjc5My41LjEuMTY3NTgxMTgxOS4zNC4wLjA." alt="Tea Cozy Logo" />
+      </header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#featuredteas">Featured Tea</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!----------------- Mission Content ----------------->
+    <main id="mission" class="mission">
+      <div class="missiontext">
+        <h2>Our Mission</h2>
+        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+      </div>
+    </main>
+
+    <!----------------- Tea of the Month Content ----------------->
+    <article id="featuredteas" class="featuredteas">
+      <h2>Tea of the Month</h2>
+      <h4>What's Steeping at The Tea Cozy?</h4>
+      <section class="teacards" id="teacardinfo">
+      </section>
+    </article>
+
+    <!----------------- Locations Content ----------------->
+    <article id="locations" class="locations">
+      <h2>Locations</h2>
+      <section class="locationcards" id="locationcardinfo">
+      </section>
+    </article>
+
+    <!----------------- Footer ----------------->
+    <footer id="footer">
+      <section class="contact">
+        <h2>The Tea Cozy</h2>
+        <h5 class="email"><a href="mailto:contact@theteacozy.com">contact@theteacozy.com</a></h5>
+        <h5 class="telephone"><a href="tel:917-555-8904">917-855-8904</a></h5>
+      </section>
+        <h5 class="copyright">copyright The Tea Cozy 2017</h5>
+    </footer>
+
+
+  </body>
+</html>
