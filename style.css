@@ -1,0 +1,174 @@
+* {
+  font-family: Helvetica;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FDCEF5;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+.headerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  z-index: 99;
+}
+
+.headerbar img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  list-style: none;
+  text-decoration: underline;
+  border-bottom: 1px solid seashell;
+}
+
+.navbar li {
+    padding: 0 15px; 
+    font-size: 22px;
+}
+
+.mission {
+  position: relative;
+  display: inline-box;
+  top: 70px;
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*3k44tk*_ga*MTI3NzcwMDAxNy4xNjc1Mjc3MTAz*_ga_3LRZM6TM9L*MTY3NTgwNjc5My41LjEuMTY3NTgxMTgxOS4zNC4wLjA.');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+
+.missiontext {
+  position: relative;
+  z-index: 2;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ // width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.featuredteas {
+  position: relative;
+  top: 100px;
+}
+
+.teacards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 80%;
+//  width: 1000px;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
+.teaimage {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
+.teaname {
+  padding-bottom: 10px;
+}
+
+.locations {
+  position: relative;
+  top: 100px;
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1us475b*_ga*MTI3NzcwMDAxNy4xNjc1Mjc3MTAz*_ga_3LRZM6TM9L*MTY3NTgyMDQ4OC43LjAuMTY3NTgyMDQ4OC42MC4wLjA.');
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+.locations h2 {
+  position: relative;
+  z-index: 2;
+  top: 75px;
+  margin: 15px auto;
+  background-color: transparent;
+}
+
+.locationcards {
+  position: relative;
+  top: 75px;
+  display: flex;
+  max-width: 980px;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.location {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 30px;
+}
+
+.location p {
+    font-size: 16px;
+    padding-top: 30px;
+} 
+
+.contact {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact h5 {
+  padding-top: 20px;
+}
+
+.copyright {
+  position: relative;
+  bottom: 0;
+  text-align: left;
+  margin-left: 20px;
+}
